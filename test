@@ -1,0 +1,220 @@
+getgenv().Valve = {
+    Options = {
+        Key = "0MXKZEA3WKNNFJSNEJ10414", -- // Put Your Serial Key In There
+        Intro = true, -- // Shows Valve Intro
+        Version = "V1.2",
+    },
+    UWP_Options = {
+        Fog = {
+            Enabled = false,
+            Fog_Start = 200,
+            Fog_End = 500,
+            Color = Color3.fromRGB(171, 4, 4),
+        },
+        UWP = {
+            BoostUWP = false, -- // Changes Material To Smooth Plastic
+            UWP_Optimizer = true, -- // Makes Game Smoother 
+            Colorful_Shader = false, -- // Makes Your Game Colorful
+        },
+        FPS_Unlocker = {
+            FPSUnlocker = true, -- // FPS Unlocker
+            FPSCap = 999, -- // FPS Unlocker Cap
+        }
+    },
+    Notifications = {
+        Enabled = true,
+        Type = "Regular", -- // Regular And Webhook
+        Webhook_URL = "", -- // WIP
+    },
+    Panic = {
+        Enabled = false,
+        Key = "K",
+    },
+    SilentAim = {
+        Enabled = true,
+        Use_KeyBind = true,
+        Key = "P",
+        Prediction = 0.135,
+        HitChance = 100,
+        Airshot_HitChance = 100,
+        HitPart = "HumanoidRootPart",
+        HitPart_Type = "Nearest Point", -- // "Nearest Part", "Nearest Point"
+        FOV = {
+            Visible = false,
+            Radius_Enabled = true,
+            Radius = 150,
+            Cursor_Position = "Cursor", -- // "Cursor" And "Sticky"
+            Filled = false,
+            Thickness = 1,
+            Transparency = 1,
+            Color = Color3.fromRGB(171, 4, 4)
+        }
+    },
+    AimAssist = {
+        Enabled = true,
+        Key = Enum.KeyCode.Q,
+        Predict = true,
+        Prediction = 0.125,
+        Airshot_Prediction = 0.128,
+        Smoothing = false,
+        Smoothness = 0.047,
+        Airshot_Smoothness = 0.040,
+        HitPart = "HumanoidRootPart",
+        AirshotHitPart_Enabled = "Head",
+        HitPart_Type = "", -- // "Nearest Part", "Nearest Point"
+        Unlock_When_Your_Death = true,
+        Unlock_When_Your_Reloading = true,
+        FOV = {
+            Visible = false,
+            Radius_Enabled = true,
+            Radius = 100,
+            Filled = false,
+            Thickness = 1,
+            Transparency = 1,
+            Color = Color3.fromRGB(0, 0, 0)
+        },
+        EasingStyle = {
+            First = "Elastic",
+            Second = "Sine",
+        }
+    },
+    Frame_Skipper = {
+        Enabled = true,
+        HitPart = 'Head',
+        SkipChance = 100,
+        Duration = 1,
+    },
+    Mod_Awareness = {
+        Enabled = true,
+        Kick_Message = "Lost connection to the game server (Error Code: 277)",
+    },
+    Safe_Adjustments = {
+        Checks = {
+            Airshot = true,
+            NoGroundShots = true,
+            Grabbed_Check = true,
+            Crew_Check = false,
+            Wall_Check = true,
+            Knocked_Check = true
+        },
+        Resolver = {
+            Enabled = true,
+        },
+        Anti_Aim_Viewer = {
+            Anti_Aim_Viewer = true,
+        }
+    },
+    Spoof = {
+        Memory = {
+            Enabled = true,
+            Start = 1014,
+            End = 1778,
+        },
+        Network_Receive = {
+            Enabled = true,
+            Start = 0.5,
+            End = 15,
+        }
+    },
+    Misc = {
+        Animations = {
+            Lay = false, 
+            Lay_Key = Enum.KeyCode.T,
+            Greet = false, 
+            Greet_Key = Enum.KeyCode.G,
+            Speed = false, 
+            Speed_Key = Enum.KeyCode.N, -- // WIP
+            Default = false, 
+            Default_Key = Enum.KeyCode.H,
+            Griddy = false, 
+            Griddy_Key = Enum.KeyCode.G, -- // WIP
+        },
+        Three_Sixty_Spin = {
+            Enabled = false,
+            Key = "x",
+            Speed = 1500,
+        },
+        Fake_Spike = {
+            Enabled = false,
+            Key = Enum.KeyCode.L,
+            Duration = 4,
+        },
+        Fake_Macro = { -- // Note You Dont Need To Type Macro Type Upper Or Lower
+            Enabled = false,
+            Key = "v",
+            Speed = 1,
+            Bypass_Macro_Abuse = false,
+            Macro_Type = "Third Person", -- // "First Person" And "Third Person"
+            Bypass_Anti_Cheat_Detection = false, -- // WIP
+        },
+        Fake_Noclip = {
+            Enabled = false,
+            Key = "t",
+            Item_1 = "[Shotgun]",
+            Item_2 = "[TacticalShotgun]",
+            Delay = 0.1,
+        }
+    },
+    Gun_Fov = {
+        Enabled = false,
+        DoubleBarrel = 22.5,
+        Revolver = 27.5,
+        Tactical_Shotgun = 35,
+        Shotgun = 35,
+        SMG = 25,
+        Rifle = 50,
+        AK47 = 32.5,
+        AR = 32.5,
+        Silencer = 100,
+        Glock = 30,
+        P90 = 90,
+        DrumGun = 10,
+    },
+    Range_Fov = {
+        Fov_Enabled = false,
+        Prediction_Enabled = false,
+        Close_Detection = 15,
+        Mid_Detection = 25,
+        Far_Detection = 30,
+        Close_Fov = 20,
+        Mid_Fov = 15,
+        Far_Fov = 10,
+        Close_Prediction = 0.127,
+        Mid_Prediction = 0.13,
+        Far_Prediction = 0.135,
+    },
+    Auto_Prediction = {
+        Enabled = true,
+        AutoMatic = false,
+        Ping1_10 = 0.10,
+        Ping10_20 = 0.11,
+        Ping20_30 = 0.12,
+        Ping30_40 = 0.123,
+        Ping40_50 = 0.125,
+        Ping50_60 = 0.127,
+        Ping60_70 = 0.133,
+        Ping70_80 = 0.134,
+        Ping80_90 = 0.136,
+        Ping90_100 = 0.137,
+        Ping100_110 = 0.140,
+        Ping110_120 = 0.143,
+        Ping120_130 = 0.147,
+        Ping130_140 = 0.150,
+        Ping140_150 = 0.152,
+        Ping150_160 = 0.154,
+        Ping160_170 = 0.157,
+        Ping170_180 = 0.158,
+        Ping180_190 = 0.160,
+        Ping190_200 = 0.163,
+    },
+    Chat = {
+        Enabled = false,
+        SilentAim_Fov = "!Fov",
+        SilentAim_Prediction = "!Prediction",
+        AimAssist_Fov = "/Fov",
+        AimAssist_Prediction = "/Prediction",
+    }
+}
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Kast0000/Valveeee/main/Test"))()
